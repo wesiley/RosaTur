@@ -12,6 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li><a class="navbar-item" href="#">Entre ou cadastre-se</a></li>
+                <li><a class="navbar-item" href="#"> Viagens Realizadas </a></li>
                 <li><a class="navbar-item" href="#">Central de Atendimento</a></li>
                 <li><a class="navbar-item" href="#">Quem somos</a></li>
             </ul>

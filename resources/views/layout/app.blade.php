@@ -27,9 +27,9 @@
         <div class="spinner"></div>
     </div>
 
-    {{-- <header> --}}
-        @include('layout.navbar')
-    {{-- </header> --}}
+    <header>
+    @include('layout.navbar')
+    </header>
 
     <main>
         @yield('content')
@@ -37,6 +37,7 @@
 
     @include('layout.footer')
 
+    @yield('links_script')
 </body>
 
 <script>

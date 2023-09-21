@@ -26,15 +26,12 @@
     color: rgb(var(--light-color));
     z-index: 9;
 }
-.efeito_parallax .parallax_text .parallax_title {
-    font-size: 25pt;
-}
 .efeito_parallax .parallax_text .parallax_paragraph {
     font-size: 11pt;
 }
 .efeito_parallax .parallax_text .parallax_btn:hover {
     /* animation: animate__pulse; */
-    animation: pulse;
+    /* animation: pulse; */
     transform-style: preserve-3d;
-    animation-duration: 1s;
+    /* animation-duration: 1s; */
 }

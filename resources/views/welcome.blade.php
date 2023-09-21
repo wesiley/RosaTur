@@ -3,8 +3,13 @@
 @section('title', 'Rosatur')
 
 @section('links_src')
+    <link rel="stylesheet" href="./css/classes/legend.css">
+    <link rel="stylesheet" href="./css/layouts/sectionWhyUs.css">
+    <link rel="stylesheet" href="./css/layouts/sectionBestOferts.css">
     <link rel="stylesheet" href="./css/efeitos/parallax.css">
     {{-- <script src="https://unpkg.com/scrollreveal"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 @endsection
 
@@ -41,7 +46,7 @@
             {{-- position: absolute; --}}
             <div class="parallax_text">
                 <p class="parallax_paragraph fs-5">Realize a viagem dos seus sonhos. Descubra o diferente!</p>
-                <h2 class="parallax_title fs-1"> Exploque novos lugares! </h2>
+                <h2 class="parallax_title title_light"> Exploque novos lugares! </h2>
                 <button class="btnG btnG-border-light parallax_btn">
                     Clique Aqui
                 </button>
@@ -53,8 +58,6 @@
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
-                /* overflow-y: hidden;
-                                                            overflow-x: scroll; */
                 gap: 4rem;
                 height: 400px;
                 padding: 0 2rem;
@@ -95,6 +98,14 @@
         <div class="div_best_travel_deals mb-5 d-flex flex-column justify-content-center">
             <div class="div_cards mb-1" style="translate: 0 -30px;">
                 <div class="cards">
+
+
+                    ao invés de cards de viagens, colocar as diversões por trás tipo:
+                    Férias na praia;
+                    Passeio de Carro nas dunas;
+                    Férias nas serras;
+
+
                     <h2 class="cards_title">
                         Aracaju
                     </h2>
@@ -103,7 +114,20 @@
                         morar
                         pode ser ainda mais interessante do que visitar.
                     </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
+                    <button class="btnG btnG-fill-main cards_btn">
+                        VER MAIS
+                    </button>
+                </div>
+                <div class="cards">
+                    <h2 class="cards_title title_light">
+                        Aracaju
+                    </h2>
+                    <p class="cards_text">
+                        Aracaju é um desses lugares que despertam no forasteiro a sensação de ter descoberto um lugar onde
+                        morar
+                        pode ser ainda mais interessante do que visitar.
+                    </p>
+                    <button class="btnG btnG-fill-main cards_btn">
                         VER MAIS
                     </button>
                 </div>
@@ -116,95 +140,19 @@
                         morar
                         pode ser ainda mais interessante do que visitar.
                     </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
-                        VER MAIS
-                    </button>
-                </div>
-                <div class="cards">
-                    <h2 class="cards_title">
-                        Aracaju
-                    </h2>
-                    <p class="cards_text">
-                        Aracaju é um desses lugares que despertam no forasteiro a sensação de ter descoberto um lugar onde
-                        morar
-                        pode ser ainda mais interessante do que visitar.
-                    </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
+                    <button class="btnG btnG-fill-main cards_btn">
                         VER MAIS
                     </button>
                 </div>
             </div>
 
-            <button class="btnG btnG-border-yellowColor mx-auto mb-5" style="width: 200px;"> OUTRAS OFERTAS </button>
+            <button class="btnG btnG-border-main mx-auto mb-5" style="width: 200px;"> OUTRAS OFERTAS </button>
         </div>
     </section>
 
-
-    <style>
-        .container_oferts {
-            width: 100%;
-            gap: 1rem;
-        }
-
-        .container_oferts_title {
-            margin-top: 1rem;
-            margin-bottom: .5rem;
-            text-align: center;
-            font-weight: 600;
-            color: rgb(var(--quin-color));
-        }
-
-        .div_oferts {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            margin: 1rem auto;
-            width: 80vw;
-        }
-
-        .oferts {
-            background-color: rgba(var(--dark-color), .05);
-            ;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            position: relative;
-            gap: 2rem;
-            margin: 1rem 0;
-            padding: .5rem;
-        }
-
-        .oferts_img {
-            width: 400px;
-            overflow: hidden;
-        }
-
-        .oferts_img img {
-            height: auto;
-            width: 100%;
-        }
-
-        .oferts_info {
-            width: 400px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-around;
-        }
-
-        .oferts_title {
-            font-weight: 500;
-            color: rgb(var(--quin-color));
-        }
-
-        .oferts_text {}
-
-        .oferts_info .btnG {}
-    </style>
     {{-- class="mb-5" --}}
     <section class="container_oferts">
-        <h2 class="container_oferts_title">
+        <h2 class="container_oferts_title title2">
             Melhores Ofertas
         </h2>
         <div class="div_oferts">
@@ -221,7 +169,7 @@
                         morar
                         pode ser ainda mais interessante do que visitar.
                     </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
+                    <button class="btnG btnG-fill-main cards_btn">
                         VER MAIS
                     </button>
                 </div>
@@ -239,7 +187,7 @@
                         morar
                         pode ser ainda mais interessante do que visitar.
                     </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
+                    <button class="btnG btnG-fill-main cards_btn">
                         VER MAIS
                     </button>
                 </div>
@@ -257,7 +205,7 @@
                         morar
                         pode ser ainda mais interessante do que visitar.
                     </p>
-                    <button class="btnG btnG-fill-yellowColor cards_btn">
+                    <button class="btnG btnG-fill-main cards_btn">
                         VER MAIS
                     </button>
                 </div>
@@ -268,7 +216,7 @@
     <div class="efeito_parallax"
         style="height: 35rem; margin: 5rem 0; background-image: url('./img/silhueta-de-tres-pessoas.jpg');">
         <div class="parallax_text">
-            <p class="parallax_paragraph fs-5">Realize a viagem dos seus sonhos. Descubra o diferente!</p>
+            <p class="parallax_paragraph title_light">Realize a viagem dos seus sonhos. Descubra o diferente!</p>
             <h2 class="parallax_title fs-1"> Exploque novos lugares! </h2>
             <button class="btnG btnG-border-light parallax_btn">
                 Clique Aqui
@@ -277,10 +225,80 @@
     </div>
 
     <section class="container_whyUs">
-        <h2> Porque escolher agente?!? </h2>
-        <div class="div_whyUs" style="margin: 5rem 0;">
+        <div class="div_whyUs">
             <div class="div_whyUs_part1">
-                <img src="" alt="">
+                <div class="whyUs_informs">
+                    <h2 class="whyUs_title title2"> Porque escolher agente?!? </h2>
+                    <div id="carouselExample" class="splide splideWhyUs">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="splide_content">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <i class="bi bi-virus fs-4"></i>
+                                            <div class="splide_informs">
+                                                <h4 class="splice_title">Slide 01 </h4>
+                                                <p class="splice_text">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                                                    assumenda
+                                                    quas
+                                                    repellat nulla sit nesciunt molestias consectetur id nobis? Possimus
+                                                    error
+                                                    voluptas
+                                                    minima rem
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                                    sequi expedita alias natus corporis deserunt laboriosam! Minus molestias
+                                                    modi ullam voluptatum, nihil vero maiores temporibus nesciunt
+                                                    voluptatibus, impedit tempora perferendis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide_content">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <i class="bi bi-virus fs-4"></i>
+                                            <div class="splide_informs">
+                                                <h4 class="splice_title">Slide 02 </h4>
+                                                <p class="splice_text">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                                                    assumenda
+                                                    quas
+                                                    repellat nulla sit nesciunt molestias consectetur id nobis? Possimus
+                                                    error
+                                                    voluptas
+                                                    minima rem
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide_content">
+                                        <div class="d-flex gap-3 align-items-start">
+                                            <i class="bi bi-virus fs-4"></i>
+                                            <div class="splide_informs">
+                                                <h4 class="splice_title">Slide 03 </h4>
+                                                <p class="splice_text">
+                                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                                                    assumenda
+                                                    quas
+                                                    repellat nulla sit nesciunt molestias consectetur id nobis? Possimus
+                                                    error
+                                                    voluptas
+                                                    minima rem
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/customers/mulher-segurando-smartphone-sem-fundo.png" alt="" style="left: 0;">
+                <img src="./img/customers/homem-e-mulher-com-celular-sem-fundo.png" alt="" style="right: 0;">
             </div>
             <div class="div_whyUs_part2">
 
@@ -288,6 +306,113 @@
         </div>
     </section>
 
+    <section class="section_tripsMade my-5">
+        <h2 class="title2 text-center"> Sobre nossas viagens </h2>
+        <div class="content container_card">
+            <div class="img_card" style="background-image: url('./img/silhueta-de-tres-pessoas.jpg');">
+                <div class="card_info">
+                    <div class="card_title"> lorem </div>
+                    <div class="card_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur natus
+                        quaerat dolor. Consectetur, voluptatem nemo aperiam totam quasi maiores minima dicta facilis animi
+                        neque, optio fugiat, sunt aut illo pariatur! </div>
+                    <div class="card_btnG">
+                        <button> butão </button>
+                    </div>
+                </div>
+            </div>
+            <div class="img_card" style="background-image: url('./img/silhueta-de-tres-pessoas.jpg');">
+                <div class="card_info">
+                    <div class="card_title"> lorem </div>
+                    <div class="card_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur natus
+                        quaerat dolor. Consectetur, voluptatem nemo aperiam totam quasi maiores minima dicta facilis animi
+                        neque, optio fugiat, sunt aut illo pariatur! </div>
+                    <div class="card_btnG">
+                        <button> butão </button>
+                    </div>
+                </div>
+            </div>
+            <div class="img_card" style="background-image: url('./img/silhueta-de-tres-pessoas.jpg');">
+                <div class="card_info">
+                    <div class="card_title"> lorem </div>
+                    <div class="card_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur natus
+                        quaerat dolor. Consectetur, voluptatem nemo aperiam totam quasi maiores minima dicta facilis animi
+                        neque, optio fugiat, sunt aut illo pariatur! </div>
+                    <div class="card_btnG">
+                        <button> butão </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .section_atendimento {
+            width: 100%;
+            margin: 5rem 0;
+        }
+
+        .banner {
+            width: 100%;
+            /* height: 10rem; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            gap: 1rem;
+            background-color: rgb(var(--sec-color))
+        }
+
+        .banner_img {
+            height: 12rem;
+            position: relative;
+        }
+
+        .banner_img img {
+            height: 100%;
+            width: auto;
+        }
+
+        .banner_info {}
+
+        .banner_info .banner_title {
+            color: rgb(var(--main-color));
+            /* text-shadow: .25px .25px rgb(var(--light-color)); */
+        }
+        
+        .banner_info .banner_text {
+            color: rgb(var(--tert-color));
+        }
+    </style>
+
+    <section class="section_atendimento my-5">
+        <div class="banner">
+            <div class="banner_img">
+                <img src="./img/customers/contato_com_cliente_imageVetorial.svg" />
+                <a href="https://br.freepik.com/vetores-gratis/ilustracao-plana-de-suporte-ao-cliente_13184991.htm#query=contato&position=8&from_view=search&track=sph"
+                    class="legend" style="bottom: 8px;">Freepik</a>
+            </div>
+            <div class="banner_info">
+                <h4 class="banner_title"> Entre em contato conosco </h4>
+                <p class="banner_text">
+                    Fale conosco pelo WhatsApp para estar por dentro das viagens do momento!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    {{-- <section class="section_atendimento my-5">
+        <div class="banner">
+            <div class="banner_img"></div>
+            <div class="banner_info">
+                <h4 class="banner_title"></h4>
+                <h4 class="banner_text"></h4>
+            </div>
+        </div>
+    </section> --}}
+
 @endsection
 
-<script src="./lib/scrollreveal.js"></script>
+@section('links_script')
+    <script src="./lib/scrollreveal.js"></script>
+    <script src="./lib/splide.js"></script>
+@endsection

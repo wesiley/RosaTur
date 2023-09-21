@@ -1,0 +1,1 @@
+new Splide('.splideWhyUs').mount();
