@@ -1,0 +1,35 @@
+header .navbar {
+    background-color: rgb(var(--quin-color));
+}
+nav.navbar {
+    color: rgb(var(--tert-color)) !important;
+    z-index: 9;
+    padding: 5px;
+}
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+}
+.navbar .navbar-brand-img {
+    height: 65px;
+    width: auto;
+}
+
+.navbar .navbar-collapse {
+
+}
+.navbar .navbar-nav {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+    gap: 10px;
+}
+
+.navbar-nav .dropdown-item {
+    
+}
