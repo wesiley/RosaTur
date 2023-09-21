@@ -1,7 +1,16 @@
-.small_card {
-    
+.container_card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80vw;
+    margin: 5rem auto;
+    padding: 1rem;
 }
 
+.small_card {
+}
 
 .long_card {
     background-color: rgba(var(--dark-color), 0.05);
@@ -43,7 +52,128 @@
     color: rgb(var(--quin-color));
 }
 
-
-.img_card{
-
+.img_card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /* min-width: 175px !important; */
+    background-position: center;
+    background-size: cover;
+    color: #eee;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 2.5px;
+    box-shadow: 0 0 5px rgba(var(--dark-color), 0.5);
+    transition: .3s linear;
 }
+.img_card:hover {
+    transform: scale(1.02);
+    box-shadow: 8px 8px 2px 2px rgba(var(--tert-color), .5);
+}
+.card_info {
+}
+.card_title {
+}
+.card_text {
+}
+.card_btnG {
+}
+
+/* @-webkit-keyframes shine {
+    0% {
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-filter: brightness(200%);
+    }
+    100% {
+        -webkit-filter: brightness(100%);
+    }
+} */
+
+/* <div class="content container_cards">
+<div class="img_card" style="background-image: url('./img/silhueta-de-tres-pessoas.jpg');">
+                <div class="card_info">
+                    <div class="card_title"> lorem </div>
+                    <div class="card_text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur natus quaerat dolor. Consectetur, voluptatem nemo aperiam totam quasi maiores minima dicta facilis animi neque, optio fugiat, sunt aut illo pariatur! </div>
+                    <div class="card_btnG">
+                        <button> butão </button>
+                    </div>
+                </div>
+            </div>
+*/
+
+/* @keyframes shine {
+    0% {
+        background: linear-gradient(
+            135deg,
+            rgba(var(--light-color), 0.05),
+            transparent 100%
+        );
+    }
+    30% {
+        background: linear-gradient(
+            135deg,
+            rgba(var(--light-color), 0.05),
+            transparent 100%
+        );
+    }
+    35% {
+        background: linear-gradient(
+            135deg,
+            rgba(var(--light-color), 0.1) 5%,
+            transparent 20%,
+            transparent 100%
+        );
+    }
+    40% {
+        background: linear-gradient(
+            135deg,
+            transparent 10%,
+            rgba(var(--light-color), 0.2) 25%,
+            transparent 60%,
+            transparent 100%
+        );
+    }
+    50% {
+        background: linear-gradient(
+            135deg,
+            transparent 30%,
+            rgba(var(--light-color), 0.5) 50%,
+            transparent 100%
+        );
+    }
+    60% {
+        background: linear-gradient(
+            135deg,
+            transparent 60%,
+            rgba(var(--light-color), 0.2) 75%,
+            transparent 100%
+        );
+    }
+    65% {
+        background: linear-gradient(
+            135deg,
+            transparent 80%,
+            rgba(var(--light-color), 0.1) 100%
+        );
+    }
+    70% {
+        background: linear-gradient(
+            135deg,
+            transparent 100%,
+            rgba(var(--light-color), 0.05) 0%,
+        );
+    }
+    100% {
+        background: linear-gradient(
+            135deg,
+            transparent 100%,
+            rgba(var(--light-color), 0.05) 0%,
+        );
+    }
+    
+} */
