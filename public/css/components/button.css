@@ -1,0 +1,55 @@
+.btnG {
+    min-width: 20px;
+    min-height: 10px;
+    padding: 5px 10px;
+    font-size: 10pt;
+    transform-style: preserve-3d;
+    transition: .25s linear;
+}
+
+.btnG-fill-dark {
+    
+}
+.btnG-fill-light {
+
+}
+.btnG-border-dark {
+    border: 2px solid rgb(var(--dark-color));
+    background-color: transparent;
+    color: rgb(var(--dark-color));
+}
+.btnG-border-light {
+    border: 2px solid rgb(var(--light-color));
+    background-color: transparent;
+    color: rgb(var(--light-color));
+}
+.btnG-fill-yellowColor {
+    border: none;
+    background-color: rgb(var(--main-color));
+    color: rgb(var(--dark-color));
+}
+.btnG-border-yellowColor {
+    border: 2px solid rgb(var(--main-color));
+    background-color: rgba(var(--light-color), .1);
+    color: rgb(var(--main-color));
+    text-shadow: .5px .5px rgba(var(--dark-color), .75);
+}
+.btnG-fill-yellowColor:hover,
+.btnG-fill-yellowColor:active,
+.btnG-fill-yellowColor:focus,
+.btnG-fill-yellowColor:focus-visible,
+.btnG-border-yellowColor:hover,
+.btnG-border-yellowColor:active,
+.btnG-border-yellowColor:focus,
+.btnG-border-yellowColor:focus-visible {
+    border-color: none;
+    translate: -1px -1px;
+    box-shadow: 3px 3px 0 1px rgba(var(--dark-color), .75);
+}
+/* .btnG-border-yellowColor {
+    border: 2px solid rgb(var(--main-color));
+    background-color: transparent;
+    color: rgb(var(--main-color));
+} */
+
+
