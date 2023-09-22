@@ -375,12 +375,12 @@
         .banner_info {}
 
         .banner_info .banner_title {
-            color: rgb(var(--main-color));
-            /* text-shadow: .25px .25px rgb(var(--light-color)); */
-        }
-        
-        .banner_info .banner_text {
             color: rgb(var(--tert-color));
+            text-shadow: 0.1px 0.1px rgba(var(--tert-color), .5);
+        }
+
+        .banner_info .banner_text {
+            color: rgb(var(--light-color));
         }
     </style>
 
