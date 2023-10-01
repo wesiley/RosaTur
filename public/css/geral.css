@@ -1,0 +1,98 @@
+@import "./navbar.css";
+@import "./footer.css";
+@import "./components.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+    --main-color: 252, 201, 111;
+    --sec-color: 240, 62, 95;
+    --tert-color: 96, 190, 174;
+    --quat-color: 142, 74, 88;
+    --quin-color: 1, 61, 56;
+    --light-color: 239, 239, 239;
+    --dark-color: 36, 36, 50;
+}
+
+#testColor {
+    color: #fcc96f;
+    color: rgb(252, 201, 111);
+
+    color: #f03e5f;
+    color: rgb(240, 62, 95);
+
+    color: #60beae;
+    color: rgb(96, 190, 174);
+
+    color: #8e4a58;
+    color: rgb(142, 74, 88);
+
+    color: #013d38;
+    color: rgb(1, 61, 56);
+
+    color: #efefef;
+    color: rgb(239, 239, 239);
+
+    color: #242432;
+    color: rgb(36, 36, 50);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: rgb(var(--dark-color));
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(var(--tert-color));
+}
+
+.div_spinner{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgb(var(--light-color));
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+.spinner{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-left: 3px solid rgb(var(--sec-color));
+    border-top: 3px solid transparent;
+    border-right: 3px solid rgb(var(--main-color));
+    border-bottom: 3px solid transparent;
+    animation: spinnerRotate 1s ease-in-out infinite;
+    /* animation: spinnerRotate 1s linear infinite; */
+    /* animation: spinnerRotate 1s cubic-bezier(0.35, 0.15, 0.15, 1) infinite; */
+    /* box-shadow: 0 0 1px 5px rgb(var(--main-color)),
+                0 0 2px 10px rgb(var(--sec-color)); */
+}
+
+@keyframes spinnerRotate {
+    0%{
+        rotate: 0;
+    }
+    5%{
+        rotate: 15deg;
+    }
+    95%{
+        rotate: 705deg;
+    }
+    100%{
+        rotate: 720deg;
+    }
+}

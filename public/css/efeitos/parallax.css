@@ -1,0 +1,37 @@
+.efeito_parallax {
+    position: relative;
+    width: 100%;
+    /* height: 300px; */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.efeito_parallax::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(var(--dark-color), 0.35);
+}
+
+.efeito_parallax .parallax_text {
+    padding: 0 10vw;
+    position: absolute;
+    color: rgb(var(--light-color));
+    z-index: 9;
+}
+.efeito_parallax .parallax_text .parallax_paragraph {
+    font-size: 11pt;
+}
+.efeito_parallax .parallax_text .parallax_btn:hover {
+    /* animation: animate__pulse; */
+    /* animation: pulse; */
+    transform-style: preserve-3d;
+    /* animation-duration: 1s; */
+}

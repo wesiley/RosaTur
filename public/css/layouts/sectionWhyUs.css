@@ -1,0 +1,80 @@
+.container_whyUs{
+    translate: 0;
+    margin: 6rem auto;
+    background: linear-gradient( to bottom, transparent, rgba(var(--dark-color), 0.05));
+    /* box-shadow: 0 0 3px rgba(var(--dark-color), 0.2); */
+    box-shadow: 0 3px 3px rgba(var(--dark-color), 0.2);
+    transition: .5s linear;
+}
+.container_whyUs:hover{
+    translate: 0 -2px;
+    box-shadow: 0 10px 10px rgba(var(--dark-color), 0.3);
+}
+.div_whyUs {
+    padding-top: 2rem;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.div_whyUs_part1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_whyUs_part1 img {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+}
+
+.div_whyUs .whyUs_informs {
+    margin: auto;
+    height: 100%;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.whyUs_informs .whyUs_title {
+    margin-bottom: .5rem;
+}
+
+.whyUs_informs .splideWhyUs {
+    width: 75%;
+    margin: 0 2rem;
+    padding: 1rem;
+}
+.splide__track {
+}
+.splide__list {
+}
+.splide__slide {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+}
+.splide__slide .splide_content{ 
+    padding: 1rem 3rem;
+}
+.splide_content .splide_informs{
+    height: auto;
+    overflow-y: scroll !important;
+}
+.splide__slide i{ 
+    color: rgb(var(--sec-color));
+}
+.splide__slide .splice_title{ 
+    color: rgb(var(--sec-color));
+    
+}
+.splide__slide .splice_text{ 
+    
+}
+    
